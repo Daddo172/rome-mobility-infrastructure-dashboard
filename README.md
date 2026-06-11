@@ -15,11 +15,20 @@ Analisi Inclusività<br>
 ![alt text](images/correlazione_disabili.png)
 
 Descrizione: Analisi della correlazione tra dimensione totale del parcheggio e percentuale di posti disabili offerti.<br>
+💡 Insights & Recommendations<br>
+Dall'analisi esplorativa condotta sui dati, sono emersi i seguenti punti chiave:<br>
+Cosa abbiamo capito (Insights)<br>
+Concentrazione Strategica: L'offerta di parcheggi di scambio a Roma non è distribuita uniformemente. Alcune linee (come la Metro B o le linee ferroviarie FL) concentrano la maggior parte della capacità di interscambio, fungendo da veri e propri "polmoni" del sistema di trasporto cittadino.<br>
+Correlazione Dimensionale: Dall'analisi della correlazione (Scatter Plot) è emerso che i parcheggi di grandi dimensioni non mostrano necessariamente una proporzionalità diretta nella quota di posti riservati ai disabili, suggerendo una potenziale area di miglioramento in termini di equità infrastrutturale.<br>
+Cosa possiamo migliorare (Recommendations)<br>
+Ottimizzazione dell'Inclusività: Per le infrastrutture di grandi dimensioni, si consiglia una revisione degli stalli riservati per garantire che l'accessibilità cresca in modo costante rispetto alla capacità totale del parcheggio.<br>
+Potenziamento del Monitoraggio: L'attuale assenza di dati geospaziali strutturati e di dati di occupazione in tempo reale limita le possibilità di un'analisi predittiva. Una futura evoluzione del progetto prevede l'integrazione di API per il monitoraggio live e la mappatura GIS avanzata.<br>
+Integrazione Tariffe: Un'analisi futura potrebbe correlare la tariffazione oraria con il tasso di occupazione effettivo, permettendo di identificare quali tariffe incentivano maggiormente l'uso del mezzo pubblico.<br>
 💻 Tech Stack<br>
 Dashboarding: Python, Streamlit<br>
 Data Manipulation: Pandas, NumPy<br>
 Interactive Charts: Plotly Express<br>
-Deployment: Streamlit Community Cloud (Pronto)<br>
+Deployment: Streamlit Community Cloud <br>
 📁 Repository Structure<br>
 app.py: Codice sorgente dell'applicazione Streamlit.<br>
 parcheggi_roma.csv: Dataset pulito.<br>
