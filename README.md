@@ -37,3 +37,10 @@ requirements.txt: Dipendenze del progetto.<br>
 Clona il repository.<br>
 Installa le dipendenze: pip install -r requirements.txt<br>
 Lancia l'applicazione: python -m streamlit run app.py<br>
+## 🔗 Data Sources
+I dati utilizzati in questo progetto provengono dal **Portale Open Data di Roma Capitale**.
+- **Dataset:** Parcheggi di scambio
+- **Link ufficiale:** https://dati.comune.roma.it/catalog/dataset/atac-002
+- **Data di estrazione:** Giugno 2026
+
+*Disclaimer: Le analisi riportate sono frutto di un'elaborazione indipendente a scopo didattico e non rappresentano in alcun modo posizioni ufficiali dell'amministrazione comunale.*
