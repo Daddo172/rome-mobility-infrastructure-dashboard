@@ -44,3 +44,12 @@ I dati utilizzati in questo progetto provengono dal **Portale Open Data di Roma 
 - **Data di estrazione:** Giugno 2026
 
 *Disclaimer: Le analisi riportate sono frutto di un'elaborazione indipendente a scopo didattico e non rappresentano in alcun modo posizioni ufficiali dell'amministrazione comunale.*
+## 🔮 Roadmap & Obiettivi Futuri
+
+Il progetto è in continua evoluzione. Gli sviluppi pianificati includono:
+
+*   **Automazione della Pipeline:** Implementazione di script per l'esecuzione pianificata (es. tramite *GitHub Actions* o *CRON jobs*) per automatizzare l'acquisizione dei dati senza intervento manuale.
+*   **Analisi Predittiva:** Integrazione di modelli di Machine Learning (es. *Prophet* o *Scikit-Learn*) per prevedere l'occupazione dei parcheggi nelle ore di punta sulla base dei dati storici accumulati.
+*   **Data Quality Report:** Sviluppo di un modulo di monitoraggio che segnali in tempo reale eventuali anomalie o interruzioni nel flusso di acquisizione dati.
+*   **Integrazione GIS:** Utilizzo di dati geospaziali avanzati per calcolare l'accessibilità reale dei parcheggi tramite analisi di *isocrone* (es. tempo reale di percorrenza a piedi fino alla stazione più vicina).
+*   **Cloud Deployment:** Migrazione del database SQLite verso un'architettura Cloud (es. *PostgreSQL su AWS/Render*) e deploy completo dell'applicazione tramite *Docker* e *Streamlit Cloud*.
