@@ -7,11 +7,15 @@ st.set_page_config(layout="wide")
 st.title("🅿️ Roma Mobility: Analisi Infrastrutturale Parcheggi")
 
 # 2. Caricamento e Pulizia Dati (fatto una sola volta)
-@st.cache_data  # Ottimizzazione: Streamlit memorizza i dati in cache per essere più veloce
+@st.cache_data
 def load_data():
-    df = pd.read_csv('parcheggi_roma.csv')
+    # Aggiungiamo 'sep=";"' perché il tuo file usa il punto e virgola
+    # Aggiungiamo 'on_bad_lines="skip"' per evitare che si blocchi se una riga è strana
+    df = pd.read_csv('parcheggi_roma.csv', sep=';', on_bad_lines='skip', encoding='utf-8')
+    
+    # Pulizia forzata
     df['P_Totali'] = pd.to_numeric(df['P_Totali'], errors='coerce')
-    df['P_Disabili'] = pd.to_numeric(df['P_Disabili'], errors='coerce') # Importante convertirli entrambi
+    df['P_Disabili'] = pd.to_numeric(df['P_Disabili'], errors='coerce')
     df['Perc_Disabili'] = (df['P_Disabili'] / df['P_Totali']) * 100
     return df
 
